@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        form{
+            padding-top: 25px;
+            border: 2px solid black;
+            width: 400px;
+            margin: auto;
+            color:white;
+            background-image: url("https://d2407na1z3fc0t.cloudfront.net/Slider/banner_62c7158f31f30");
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        form>input{
+            padding: 5px;
+            width:300px;
+            margin-left: 10px;
+        }
+        form>p{
+            
+            font-weight: bolder;
+            margin-left: 10px;
+        }
+        form>button{
+            margin-top:10px;
+            width:310px;
+            border-radius:40px;
+            margin-left:12px;
+            padding: 5px;
+        }           
+        body{
+         background-image: url("https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_2055615416.jpg");
+            background-color: rgb(215, 249, 239);
+        }
+        .login>a{
+            margin-left:8px;
+            color:white;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Signup Page</h1>
+    <form>
+        <p>Email Address</p>
+        <input id="mail" type="email" placeholder="Enter your EmailID "/>
+        <p>Phone Number</p>
+        <input id="number" type="tel" maxlength="10" minlength="10"  placeholder="Enter Your PhoneNumber"/>
+        <p>Enter Password</p>
+        <input id="pass" type="password"/>
+
+        <button>Signup</button>
+        <p class="login"><a href="login.html">Login</a></p>  
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",signup);
+    let signupArr=JSON.parse(localStorage.getItem("signdetails"))||[];
+    function signup()
+    {
+        event.preventDefault();
+        let signupobj={
+            mail:document.querySelector("#mail").value,
+            num:document.querySelector("#number").value,
+            password:document.querySelector("#pass").value,
+        }
+        signupArr.push(signupobj);
+        localStorage.setItem("signdetails",JSON.stringify(signupArr));
+        alert("Signup Successful");
+    }
+</script>
