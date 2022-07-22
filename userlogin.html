@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        h2{
+            text-align: center;
+            margin-top: 50px;
+        }
+        form{
+            margin-top: 20px;
+            width:500px;
+            height: auto;
+            padding: 20px;
+            border: 2px solid greenyellow;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        body{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjV6W20QQYslSsizT8BpQW39lXHOHN6Vfzsw&usqp=CAU");
+        }
+        form>p{
+            font-size: 20px;
+            margin-left: 10px;
+            color:white;
+        }
+        form>input{
+            padding:10px;
+            width:200px;
+            margin-left: 10px;
+            margin-top: 5px;
+        }
+        form>input:last-child{
+            background-color: blueviolet;
+            color:white;
+            width:210px;
+            border:0px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Signin here</h2>
+    <form>
+        <p>Enter Email</p>
+        <input type="text" name="name" id="name" placeholder="Enter your mail id">
+        <p>Enter Password</p>
+        <input type="text" id="pass" placeholder="enter password">
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",login);
+    let details=JSON.parse(localStorage.getItem("signdetails"));
+    // console.log(details[0].mail)
+    function login()
+    {
+        event.preventDefault();
+        var pass=document.getElementById("pass").value;
+        var email=document.getElementById("name").value;    
+        let flag=true;
+        for(let i=0;i<details.length;i++)
+        {
+            if(email!=details[i].mail && pass!=details[i].password)
+             {
+                flag=false;
+             }
+            else if((email==details[i].mail) && (pass==details[i].password))
+            {
+                flag=true;
+                break;
+            }   
+        }
+        if(flag==true)
+        {
+            alert("Login Successful");
+            window.location.href="body.html";
+        }
+        else
+            alert("Invalid username or password");
+    }
+    
+</script>

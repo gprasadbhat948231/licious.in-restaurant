@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todaysdeal</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+        body{
+            background-color: rgb(243, 245, 245);
+        }
+        #header{
+            width:80%;
+            margin: auto;
+        }
+        .home{
+            display: flex;
+            justify-content:start;
+            width:100%;
+            height:auto;
+        }
+        .homesub>p:last-child{
+            color:rgb(241, 15, 15);
+        }
+        .homesub>img{
+            margin: auto;   
+            width:10px;
+            height:10px;
+        }
+        .homesub{
+            display: flex;
+            width:140px;
+         }
+        .all>img{
+            width:40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+        .all{
+            display: flex;
+            justify-content:flex-start;
+            align-items: center;
+            border-bottom:2px solid #dedddd;;
+        }
+        .all>img{
+            padding-bottom: 5px;
+            border-bottom: 2px solid red;
+        }
+        .todaysdeal{
+            display: flex;
+            border-bottom:2px solid #dedddd;
+        }
+        .meals{
+            /* border: 1px solid red;; */
+            display: flex ;
+            height: 30px;
+            justify-content: center;
+            align-items: center;
+            text-align:center;
+            margin-top: 18px;
+            /* border-right: 1px solid #dedddd; */
+            margin-left: 5px;
+        }
+        .meals>img{
+            width:40px;
+            height: 40px;
+        }
+        #todaysdealtop{
+            border-radius: 13px;
+            width:80%;
+            text-align: center;
+            display: flex;
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(1,auto);
+            gap:20px;
+            margin: auto;
+            margin-top: 30px;
+        }
+        #todaysdealtop>div{
+            margin: auto;
+            gap:20px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #todaysdealtop>div>img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width:100%;
+        }
+        #weight{
+            display: flex;
+            width: 68%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:20px ;
+        }
+        #mrpdiv>button{
+            background-color: #d11243;
+            color:#dedddd;
+            padding: 9px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        #bseller{
+            margin-left: 150px;
+        }
+        #mrpdiv{
+            display: flex;
+            height:auto;
+            width:88%;
+            margin-left: 10px;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #mrpdiv>h3{
+            color:green;
+        }
+        #Meatopia{
+            cursor: pointer;
+            width:48.5%;
+            border-radius:10px;
+            background-size: 100%;
+            background-color: #ffdc93;
+            margin:3% auto 2%;
+        }
+        #Mtop{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            padding: 16px 12px;
+        }
+        #Mtop>img{
+            margin-left: 10px;
+            width:100px;
+            height: auto;
+        }
+        #Mtop>button{
+            background-color: #d11243;
+            color: white;
+            padding: 8px;
+            width: 100px;
+            border:0px;
+            border-radius:5px;
+        }
+        .Mbottom{
+            margin-left: 20px;
+            font-weight: 700;
+            color:rgba(29, 27, 27, 0.878)
+        }
+        #todaysdealbottom{
+            border-radius: 13px;
+            width:80%;
+            text-align: center;
+            display: flex;
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(3,auto);
+            gap:20px;
+            margin: auto;
+            margin-top: 30px;
+
+        }
+        #todaysdealbottom>div{
+            margin: auto;
+            gap:20px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #todaysdealbottom>div>img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width:100%;
+        }
+        #weight{
+            display: flex;
+            width: 68%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:20px ;
+        }
+        #mrpdiv>button{
+            background-color: #d11243;
+            color:#dedddd;
+            padding: 9px;
+            border: 0px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <div id="main">
+        <div id="navbar">
+            <div id="heading">
+                <div>
+                    <p>Why Licious?</p>
+                    <p>Download App</p>
+                    <img src="https://m.licious.in/image/apple-logo.svg"/>
+                    <img src="https://m.licious.in/image/google-play.svg"/>
+                </div>
+            </div>
+            <div id="right">
+                <ul>
+                    <li>FSSC Certification</li>
+                    <li>About Us</li>
+                    <li>Careers@Licious</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+         <div id="sub1">
+            
+            <div id="imagelogo">
+                <img src="https://m.licious.in/image/rebranding/svg/licious-logo.svg"/>
+            </div>
+            
+            <div class="location">
+                    <div>
+                        <img src="https://m.licious.in/image/rebranding/svg/location-dropdown.svg"/>
+                    </div>
+                    <div>
+                        <span>Bengaluru</span>
+                         <span>Indiranagar</span>
+                    </div>
+            </div>
+            
+            <div class="search">
+                <input placeholder="Search Here">
+            </div>
+            
+            <div class="categories">
+                <img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg">
+                <p>Categories</p>
+            </div>
+            
+            <div class="login">
+                <img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png">
+                <a href="usersignup.html"><span>Login</span></a>
+            </div>
+            
+            <div class="cart">
+                <img src="https://m.licious.in/image/rebranding/png/Cart_v2.png">
+                <span>Cart</span>
+            </div>
+        </div>
+</div>
+    <!-- navbar end -->
+    <div id="header">
+        <div class="home">
+                <div class="homesub">
+                    <p>Home</p>
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAflBMVEX///8AAAD8/Pz39/f09PRdXV0HBwcSEhLAwMB8fHxwcHClpaXy8vKUlJRjY2PR0dHr6+uGhoaOjo5YWFiamppAQEAdHR10dHRGRkZ+fn7i4uK6urpqampTU1NMTEwwMDApKSmvr6+fn587OzvX19cXFxceHh60tLQlJSXJyck2/KEoAAADc0lEQVR4nO3di1baQBSF4ZkQAigQvAVFsWCh1vd/wVbbRaOImTmns87OrP0/wfkWhEsymTjHGGOMMeZcUc/mN5um2dzMZ3VhPY243bLxrfZntfVEoupHf9Tti/VU0ZVnx4zXhgvryeKqN587vG/G1rPFdF+dcvzu2nq68LZfOby/s54vtPHXjt5IVqMOR08kxfdORz8k1wEO7yfWY3Y27X5j9UNyEeaAlxT7UAi45DnYAS6ZR0CgJT9iIMCSVZTD+6X1wKe6j4TASsK+DXsgCf4WQZfcxUMwJYJXBFMyk0AQJTFf7NCSnQwCKAn8EX/UmfXgH1sLIXCScykETVJ2nUHpjeTEqdL+SVbylwRMMpFDsCTlz1wkL4o3l3+wnr7dkwKCJRH9BoaUSP6WUJI2nQTpSrbuOKEkRZS8NackRZRQkq58JJeUUJIsSihJl0oypCRFsotZlKSMEkrSlY8kfrFKqytKUkQJJemiBE+iujqXj2RNSYoooSRd8sVdlKSKkj+SgfX4rfiavDW0nr6dSjKznr6dRlKtrKdvp5FALR50WzlkhPTJpZI8W8/+PrkE7RbAjl0JTre2nvxj0iP+1nrwDw0+2UaljxCxw19Zj/4uucNfWM/eTuHwSBvGaBx7oB/AGgfSfh4qxwhnUyWVw59bj39I58BZRj+41Thw/urqHDin5enIyYGzfCAXR0mHR1rmWN7QQcf/T+fAuf1K6bAe/xAdr+Gcsy5D9qPM3oGzoc2UjowcONcP6MjJgXNCkY7XcC4d0AHm+EaH95fW4x9a0EFHgnQOnGVldOTkwHngCh05OZ6sxz9ER04OnHUZi5PP46LDIt3/DxxHobpusLUe/19LBaMCcowzcRSKAx3JobnDG8pRyHfErqBuoIh+SA+oww0zcRTSp11U99ajv6/OxCG9sxvOIXweAZ5DdqxXSHdO/E3yQBhEhxMsdId0uKtMHO4hE0f0tpKojtifWhXs89qnUY4RrMO5mOvQyI6Y/QuhHW4RfBM0tiP8A3hUW0/aUeADueAdgTve98DhBgEnTPvgcG7X+Xe3Hw7nxh2Hyb4njq6NKJqd9Xzhjb94d22gNsnpanXy0sJwaj1bXMXs0xelQTq9G9hickRpLkvrqUSV54+to3603mLtVxRV8XK9nK/X88lTDXOLF2OMMcby6BddWkpZp6MsCgAAAABJRU5ErkJggg==">
+                    <p>Today's Deals</p>
+                </div>
+        </div>
+        <div class="todaysdeal">
+               <h2>Today's Deals</h2>
+                    <div class="meals">
+                        <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_58f5ea40bc89b">
+                        <p>Quick Meals</p>
+                    </div>
+                    <div class="meals">
+                        <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_58f5ea6762810">
+                        <p>From across categories</p>
+                    </div>
+                    <div class="meals">
+                        <img src="https://d2407na1z3fc0t.cloudfront.net/USP/usp_58f5ea6762810">
+                        <p>Everyday meal solution</p>
+                    </div>
+        </div> 
+        <div class="all">
+            <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-Category/d738e736-cc1a-c2a3-691f-4d4a014088e3/original/Todays-deal21.png">
+            <h3>All</h3>
+        </div>
+    </div>
+    <div id="todaysdealtop"></div>
+        <div id="Meatopia">
+            <div id="Mtop">
+                 <img src="https://www.licious.in/img/rebranding/loyalty_licious_logo.svg"/>
+                <button>JOIN NOW</button>
+            </div>
+                <hr>
+            <div class="Mbottom">
+                <b>Enjoy unlimited free delivery &perks crafted for true meat lovers</b>
+            </div>
+        </div>
+    <div id="todaysdealbottom"></div>
+</body>
+</html>
+<script>
+    let todaysdealtop=[
+        {
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_av4kgtb3l1h/1/prod_display_image/1631077687.4036--2021-09-0810:38:07--1818?format=webp",
+            lebel:"Chicken curry cut -small pieces",
+            details:"small piece of bone in& boneless chicken",
+            weight:"Net wt:500gm",
+            gross:"Gross:250gms",
+            mrp:"Price:159",
+            offer:"10%OFF",
+        },
+        {
+            image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/ca5adea0-fcd4-9787-416a-7b95b3a670b4/original/ChickenLC.jpg?format=webp",
+            lebel:"chicken curry cut large pieces",
+            details:"Half a chicken cut to chunky pieces including one leg",
+            weight:"Net wt:500gm",
+            gross:"Gross:256gms",
+            mrp:"Price:151",
+            offer:"10%OFF",
+        },
+        {
+            image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_av4kgtb3l1h/1/prod_display_image/1631077687.4036--2021-09-0810:38:07--1818?format=webp",
+            lebel:"Classic Eggs pack of 12",
+            details:"White shell eggs laid naturally by healthy hens",
+            weight:"Net wt:12",
+            gross:"Pieces:12",
+            mrp:"Price:100",
+            offer:"5%OFF",
+        }
+    ];
+    for(let i=0;i<todaysdealtop.length;i++)
+    {
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",todaysdealtop[i].image);
+        let lebel=document.createElement("h3");
+        lebel.innerText=todaysdealtop[i].lebel;
+        let details=document.createElement("h4");
+        details.innerText=todaysdealtop[i].details;
+        let divn=document.createElement("div");
+        divn.setAttribute("id","weight");
+        let weight=document.createElement("h3");
+        weight.innerText=todaysdealtop[i].weight;
+        let gross=document.createElement("h3");
+        gross.innerText=todaysdealtop[i].gross;
+        let mrpdiv=document.createElement("div");
+        mrpdiv.setAttribute("id","mrpdiv")
+        let mrp=document.createElement("h2");
+        mrp.innerText=todaysdealtop[i].mrp;
+        let offer=document.createElement("h3");
+        offer.innerText=todaysdealtop[i].offer;
+        let button=document.createElement("button");
+        button.innerText="ADD TO CART";
+        divn.append(weight,gross);
+        mrpdiv.append(mrp,offer,button);
+        div.append(image,lebel,details,divn,mrpdiv);
+        document.querySelector("#todaysdealtop").append(div);
+    }
+   let todaysdealbottom=[
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_41jku6qp0fd/1/prod_display_image/1634557164.7757--2021-10-1817:09:24--1818",
+            lebel:"Seer(Vanjaram/Surmai)Small steaks",
+            details:"Smaller sized pink firm freshy,salt water seer steaks",
+            weight:"Net wt:350gm",
+            gross:"Gross:550gms",
+            mrp:"Price:713",
+            offer:"10%OFF",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/cbede953-c94c-3c48-a9a2-bad815fa1c3a/original/ChickenLegCurryCutpiecesHeroShot.jpg?format=webp",
+            lebel:"Chicken legg curry cut Large pieces",
+            details:"4-6 bone in pieces of chicken",
+            weight:"Net wt:400gm",
+            gross:"Gross:550gms",
+            mrp:"Price:161",
+            offer:"15%OFF",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_5746a7a8198ef/1/prod_display_image/1634365292.7858--2021-10-1611:51:32--905?format=webp",
+            lebel:"Indian Salmoon(Rawas)large-steaks",
+            details:"Omega 3 rich,oow fat,white fleshed indian fish",
+            weight:"Net wt:300gm",
+            gross:"Gross:450gms",
+            mrp:"Price:883",
+            offer:"20%OFF",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/452a3295-208c-d0b0-0afa-0be964004ba7/original/Rich-Goat-Curry-Cut-(Small---19-to-21-Pieces)--Hero-Shot.jpg?format=webp",
+            lebel:"Goat curry cut-small pieces",
+            details:"BIte sized cutsof rich goat meaton the bone from therich",
+            weight:"Net wt:450gm",
+            gross:"Gross:550gms",
+            mrp:"Price:408",
+            offer:"12%OFF",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_nvvktwxg5of/1/prod_display_image/1633921452.0664--2021-10-1108:34:12--1818",
+            lebel:"BASA(Pangus)-finger cut",
+            details:"11-14 pieces of expertlycrafted BASA fillet that further",
+            weight:"Net wt:224gm",
+            gross:"Gross:927gms",
+            mrp:"Price:242",
+            offer:"10%OFF",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/0118552d-3224-6151-8967-e0f8c322b394/original/Fish-Tikka-Tag.jpg?format=webp",
+            lebel:"Fish Tikka ready to cook",
+            details:"boneless Basa fillet in an East Indian style",
+            weight:"Net wt:500gm",
+            gross:"Pieces:11-13 pieces",
+            mrp:"Price:296",
+            offer:"10%OFF",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/2fc250e2-0bfe-3c3e-5fd2-aa918584fa00/original/Chicken-leg--boneless-cubes+new.jpg?format=webp",
+            lebel:"Chicken legg boneless cubes",
+            details:"12-15 boneless leg and thigh pieces",
+            weight:"Net wt:450gm",
+            gross:"Gross:643gms",
+            mrp:"Price:261",
+            offer:"5%OFF",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_m95jp43ivak/1/prod_display_image/1636890699.3208--2021-11-1417:21:39--905?format=webp",
+            lebel:"Seer(vanjiram)Medium boneless cubes",
+            details:"Relish the smooth,soft texture of seer(Surmai) in every..",
+            weight:"Net wt:300gm",
+            gross:"Gross:550gms",
+            mrp:"Price:1043",
+            offer:"10%OFF",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_576360a8b87f1/1/prod_display_image/1636890858.5031--2021-11-1417:24:18--905?format=webp",
+            lebel:"Mutton liver chunks",
+            details:"Cleaned trimmed and tendercook up delicious meals",
+            weight:"Net wt:250gm",
+            gross:"Gross:250gms",
+            mrp:"Price:227",
+            offer:"16%OFF",
+    },
+   ];
+   for(let i=0;i<todaysdealbottom.length;i++)
+    {
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",todaysdealbottom[i].image);
+        let lebel=document.createElement("h3");
+        lebel.innerText=todaysdealbottom[i].lebel;
+        let details=document.createElement("h4");
+        details.innerText=todaysdealbottom[i].details;
+        let divn=document.createElement("div");
+        divn.setAttribute("id","weight");
+        let weight=document.createElement("h3");
+        weight.innerText=todaysdealbottom[i].weight;
+        let gross=document.createElement("h3");
+        gross.innerText=todaysdealbottom[i].gross;
+        let mrpdiv=document.createElement("div");
+        mrpdiv.setAttribute("id","mrpdiv")
+        let mrp=document.createElement("h2");
+        mrp.innerText=todaysdealbottom[i].mrp;
+        let offer=document.createElement("h3");
+        offer.innerText=todaysdealbottom[i].offer;
+        let button=document.createElement("button");
+        button.innerText="ADD TO CART";
+        divn.append(weight,gross);
+        mrpdiv.append(mrp,offer,button);
+        div.append(image,lebel,details,divn,mrpdiv);
+        document.querySelector("#todaysdealbottom").append(div);
+    }    
+     
+</script>
