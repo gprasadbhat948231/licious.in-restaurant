@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="navbar.css" />
+    <style>
+        .container{
+            width:80%;
+            margin:0px auto;
+        }
+        .footerheader{
+            position:relative;
+        }
+        .footerheader{
+            width:120px;
+        }
+        #usefull-links{
+            margin-top: 5px;
+            margin-bottom: 30px;
+            display: flex;
+        }
+        #links{
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            width:38%;
+            border-right:1px solid gray;
+        }
+        #links ul{
+            display: inline-block;
+            vertical-align: top;
+            padding: 0px;
+            list-style-type: none;
+        }
+        li.head{
+            font-weight: 600;
+        }
+        #links>ul>li{
+            font-size: 14px;
+            line-height: 1.8;
+        }
+        #links{
+            width:100pz
+        }
+        li{
+            display: list-item;
+            text-align:-webkit-match-parent;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .download img{
+            width:122px;
+        }
+        .keep-in-touch{
+            text-align: right;
+            font-weight: 600;
+            margin-right: 116px;
+            line-height: 1;
+        }
+        .keep-text{
+            padding-right: 15px;
+        }
+        .keep-in-touch img{
+            display:inline-block;
+            vertical-align:middle ;
+            width: 22px;
+            margin-left: 13px;
+        }
+        .links-contact{
+            display: flex;
+            margin-left: 30px;
+        }
+        .contact-list{
+            width:42%;
+        }
+        .addr{
+            margin-top: 10px;
+        }
+        .verified-pay{
+            width:22%;
+        }
+        .veri img{
+            width:122px;
+        }
+        .city-heading-container{
+            position: relative;
+        }
+        .city_name:first-of-type{
+            margin-left: 0px;
+            border-bottom: none;
+            padding-left: 0!important;
+        }
+        .city_name:last-of-type{
+            margin-left: 0px;
+            padding-left: none!important;
+        }
+        .city_name{
+            font-size: 13px;
+            display: inline;
+            color: #4a4a4a;
+             font-family: lato;
+            text-decoration: none;
+             padding: 3px 20px;
+            border-right: 1px solid #c2c2c2;
+        }
+        .faq{
+            margin: auto;
+            width:80%;
+            /* font-size:14px; */
+        }
+        .disclaimer{
+            width:80%;
+            margin: auto;
+            margin-top: 25px;
+            padding-top: 10px;
+            text-align: center;
+            border-top: 1px solid #eaeaea;
+        }
+        .disclaimer h5 img{
+            width:15px;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .disclaimer h5 span{
+            margin: 0px 10px;
+        }
+        .plast{
+            font-size: 14px;
+        }
+
+
+
+        body{
+            background-color: rgb(243, 245, 245);
+        }
+        #heading{
+            width:auto;
+            margin: auto;
+        }
+        #heading>img{
+            width: 100%;
+        }
+        #category_subheading{
+            margin-left: 200px;
+        }
+        #categorydiv{
+            width:75%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap:10px;
+            }
+        #categorydiv>div{
+            text-align: center;
+            width:auto;
+            margin: auto;
+       }
+       .imghover:hover{
+        transform: scale( 1.09);
+    }
+        #categorydiv>div>img{    
+            height: 200px;
+            width:250px;
+            border-radius: 8px;
+            transition: transform .2s;
+        }
+        #exp-category{
+            width:75%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(3,auto);
+            gap:10px;
+            }
+        #exp-category>div{
+            text-align: center;
+            width:auto;
+            margin: auto;
+       }
+        #exp-category>div>img{    
+            height: 200px;
+            width:250px;
+            border-radius: 8px;
+        }
+        .explore{
+            margin-left: 200px;
+        }
+        #Meatopia{
+            cursor: pointer;
+            width:48.5%;
+            border-radius:10px;
+            background-size: 100%;
+            background-color: #ffdc93;
+            margin:3% auto 2%;
+        }
+        #Mtop{
+            display: flex;
+            justify-content: space-between;
+            font-size: 16px;
+            font-weight: 500;
+            color: black;
+            padding: 16px 12px;
+        }
+        #Mtop>img{
+            margin-left: 10px;
+            width:100px;
+            height: auto;
+        }
+        #Mtop>button{
+            background-color: #d11243;
+            color: white;
+            padding: 8px;
+            width: 100px;
+            border:0px;
+            border-radius:5px;
+        }
+        .Mbottom{
+            margin-left: 20px;
+            font-weight: 700;
+            color:rgba(29, 27, 27, 0.878)
+        }
+        .Know-licious{
+            width: auto;
+            margin:40px 110px 20px 110px;
+            border-radius: 8px;
+            border:2px solid #dedddd;
+            position: relative;
+        }
+        .Know-licious ul{
+            text-align:center;
+            margin:20px 0px;
+            padding:0px;
+        }
+        .Know-licious h2{
+            position: absolute;
+            padding: 10px 0px;
+            text-align: center;
+            background: #f7f6f6;
+            color:#d11243;
+            font-size: 20px;
+            top:-50px;
+            left: 38%;
+            width:300px;
+            margin-right: -150px;
+            font-weight: 600;
+            line-height: 110%;
+            margin: 1.78rem 0 1.424rem 0;
+        }
+        .Know-licious ul li{
+            display: inline-block;
+            vertical-align: middle;
+            font-size: 20px;
+            color: #4a4a4a;
+            padding: 0px 59px;
+            border-right: 1px solid #dedddd;
+            line-height: 1.4;
+            text-align: center;
+            text-transform: capitalize;
+            list-style-type:none ;
+        }
+        .Know-licious ul li:last-child{
+            border-right: 0px;
+        }
+        .discoverhow{
+            position: absolute;
+            padding: 2px;
+            text-align: center;
+            background: #fbfbfb;
+            color:#d11243;
+            font-size: 16px;
+            bottom:-16px;
+            left:50%;
+            width: 150px;
+            margin-left: -75px;
+            border: 2px solid #d11243;
+            font-weight: 600;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .open{
+            transform: rotate(90deg);
+            width:8px;
+            height:12px;
+            margin-left: 8px;
+            border: 0px;
+
+        }
+        .offer{
+            margin-left:230px;
+        }
+        .referral{
+            width:60%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 6px;
+            background-color: #f1a94b;
+            align-items: center;
+            margin: 20px auto;
+            cursor: pointer;
+        }
+        .referral img{
+            width:55px;
+            height: 56px;
+            border-radius: 50%;
+            margin: 10px 25px;
+        }
+        .referral>span{
+            margin:5px;
+            font-size: 24px;
+            color:white;
+            text-align: left;
+            font-weight: 700;
+            line-height: 1.21;
+        }
+        .referral>div:last-child img{
+            width: 10.4px;
+            height: 25px;
+            margin: 5px 20px 5px 300px;
+        }
+        #bestseller{
+            border-radius: 13px;
+            width:80%;
+            text-align: center;
+            display: flex;
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(1,auto);
+            gap:20px;
+            margin: auto;
+        }
+        #bestseller>div{
+            margin: auto;
+            gap:20px;
+            border-radius: 15px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #bestseller>div>img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width:100%;
+        }
+        #weight{
+            display: flex;
+            width: 88%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:20px ;
+        }
+        #price{
+            display: flex;
+            height:auto;
+            width: 88%;
+            margin-left:20px ;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #price>button{
+            background-color: #d11243;
+            color:#dedddd;
+            padding: 9px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        #bseller{
+            margin-left: 150px;
+        }
+        .bonelesshead{
+            margin-left: 150px;
+        }
+        #Boneless{
+            width:80%;
+            text-align: center;
+            display: flex;
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(1,auto);
+            margin: auto;
+            gap:20px;
+            /* margin-left: 94px; */
+        }
+        #Boneless>div{
+            margin: auto;
+            gap:20px;
+            border-radius: 10px;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #Boneless>div>img{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            width: 100%;
+        }
+        #weight{
+            display: flex;
+            width: 88%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:20px ;
+        }
+        #price{
+            display: flex;
+            height:auto;
+            width: 88%;
+            margin-left:20px ;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #price>button{
+            background-color: #d11243;
+            color:#dedddd;
+            padding: 9px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        .rewardbannernew{
+            background-color: rgb(252, 218, 224);
+            margin:auto;
+            margin-top: 30px;
+            width:68.5%;
+            padding: 12px;
+            border-radius: 4px;
+            border:0.5px solid #ffe6ea;
+            display: flex;
+            cursor: pointer;
+        }
+        .logo{
+            width:50px;
+            height: 50px;
+            padding: 13px 9px 10px 13px;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .content{
+            width:100%;
+            margin-left: 8px;
+            display: flex;
+            flex-direction: column;
+        }
+        .top-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        .middle-content{
+            margin-top: 8px;
+            font-size: 13px;
+            line-height: 1.38;
+            color: black;
+        }
+        .title{
+            font-size: 15px;
+            font-weight: 700;
+            line-height: 1.33;
+            color: black;
+        }
+        .text{
+            font-size: 11px;
+            font-weight: 700;
+            line-height: 1.36;
+            text-align: right;
+            color: #d11243;
+        }
+        .arrow
+        {
+            margin-left: 1px;
+            margin-bottom: -0.5px;
+            width:5px;
+            height: 9px;
+            object-fit: contain;
+        }
+        #bms{
+            width:80%;
+            height: auto;
+            text-align: center;
+            display: flex;
+            display: grid;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows: repeat(1,auto);
+            margin: auto;
+            gap:20px;
+        }
+        #bms>div{
+            height: auto;
+            margin: auto;
+            gap:20px;
+            border-radius: 10px;
+            /* margin-left: 80px; */
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        #bms>div>img{
+            width:100%;
+        }
+        #weight{
+            display: flex;
+            width: 88%;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+            margin-left:20px ;
+        }
+        #price{
+            display: flex;
+            height:auto;
+            width: 88%;
+            margin-left:20px ;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #price>button{
+            background-color: #d11243;
+            color:#dedddd;
+            padding: 9px;
+            border: 0px;
+            border-radius: 5px;
+        }
+        #bseller{
+            margin-left: 150px;
+        }
+        #blogtext{
+            font-size: 15px;
+            color: #4a4a4a;
+            font-weight: 600;
+            margin-left: 150px;
+            /* margin-right: 80px; */
+            display: flex;
+            height: auto;
+            margin-top: 20px;
+            justify-content: space-between;
+            width: 80%;
+        }
+        #blogtext>p{
+            float: right;
+            color: #d11243;
+            font-size: 20px;
+            margin-right: 4px;
+        }
+        #blog{
+            width: 80%;
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,auto);
+            gap:20px;
+            margin:auto;
+        }
+        #blog>div{
+            width:100%;
+            height:100%;
+            border-radius: 5px;
+        }
+        #blogimg{
+            width:100%;
+            margin: auto;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        #adv>img{
+            margin-left:150px;
+            width:1240px;
+            height: 489px;
+        }
+        #newshead{
+            font-size: 26px;
+            margin-left: 150px;
+        }
+        #news{
+            width: 80%;
+            display: flex;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: repeat(1,auto);
+            margin:auto;
+        }
+        #news div{
+            width:200px;
+            height: auto;
+            margin: auto;
+            text-align: justify;
+        }
+        #news>div>img{
+            width: 100%;
+            height: 170px;
+        }
+        #news>div h5{
+            margin-top: 8px;
+            font-weight: 700;
+            line-height: 17px;
+            font-size: 14px;
+            white-space: normal;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="navbar">
+            <div id="heading">
+                <div>
+                    <p>Why Licious?</p>
+                    <p>Download App</p>
+                    <img src="https://m.licious.in/image/apple-logo.svg"/>
+                    <img src="https://m.licious.in/image/google-play.svg"/>
+                </div>
+            </div>
+            <div id="right">
+                <ul>
+                    <li>FSSC Certification</li>
+                    <li>About Us</li>
+                    <li>Careers@Licious</li>
+                    <li>Contact Us</li>
+                </ul>
+            </div>
+        </div>
+         <div id="sub1">
+            
+            <div id="imagelogo">
+                <img src="https://m.licious.in/image/rebranding/svg/licious-logo.svg"/>
+            </div>
+            
+            <div class="location">
+                    <div>
+                        <img src="https://m.licious.in/image/rebranding/svg/location-dropdown.svg"/>
+                    </div>
+                    <div>
+                        <span>Bengaluru</span>
+                         <span>Indiranagar</span>
+                    </div>
+            </div>
+            
+            <div class="search">
+                <input placeholder="Search Here">
+            </div>
+            
+            <div class="categories">
+                <img src="https://m.licious.in/image/rebranding/svg/category-dropdown-icon.svg">
+                <p>Categories</p>
+            </div>
+            
+            <div class="login">
+                <img src="https://m.licious.in/image/rebranding/png/profile-icon-new.png">
+                <a href="usersignup.html"><span>Login</span></a>
+            </div>
+            
+            <div class="cart">
+                <img src="https://m.licious.in/image/rebranding/png/Cart_v2.png">
+                <span>Cart</span>
+            </div>
+        </div>
+</div>
+    <div id="heading">
+        <img src="https://d2407na1z3fc0t.cloudfront.net/Slider/banner_62c7158f31f30"/>
+    </div>
+    <div id="category_subheading">
+        <h2>Shop By Categories</h2>
+        <h3 id="topfreshcat">Freshest meet just for you</h3>
+    </div>
+    <div id="categorydiv">
+
+    </div>
+    <div id="Meatopia">
+            <div id="Mtop">
+                 <img src="https://www.licious.in/img/rebranding/loyalty_licious_logo.svg"/>
+                <button>JOIN NOW</button>
+            </div>
+                <hr>
+            <div class="Mbottom">
+                <b>Enjoy unlimited free delivery &perks crafted for true meat lovers</b>
+            </div>
+    </div>
+    <div class="Know-licious">
+        <h2>Know the Licious Way</h2>
+        <ul>
+            <li>Premium<p>Produce</p></li>
+            <li>World-class Central<p>Production Unit</p></li>
+            <li>150 Quality<p>Checks</p></li>
+            <li>Delivered Fresh<p>EveryDay</p></li>
+            <li>Extraordinary<p>cooking</p></li>
+        </ul>
+        <span class="discoverhow">Discover How<img class="open" src="https://www.licious.in/img/rebranding/arrow.png"></span>
+    </div>
+    <div class="offer">
+        <img src="https://dao54xqhg9jfa.cloudfront.net/OMS-StaticBanner/2009d707-8f4d-528b-6df4-c75c9557f4d3/original/static-bank-units-July-web_(15).jpg?format=webp"/>
+    </div>
+    <div class="referral">
+        <div>
+            <img src="https://d2407na1z3fc0t.cloudfront.net/Banner/rebranding_referral_banner_icon.png"/>
+        </div>
+        <span>Invite friends and get Rs 200 per refferal</span>
+        <div>
+            <img src="https://www.licious.in/img/rebranding/play_symbol.png"/>
+        </div>
+    </div>
+    <h2 id="bseller">Bestseller</h2>
+    <div id="bestseller">
+    </div>
+    <h2 class="bonelesshead">Boneless cuts</h2>
+    <div id="Boneless">
+    </div>
+    <div class="reward-banner" onclick="rewardfunction()">
+        <div class="rewardbannernew">
+            <div class="logo">
+                <img src="https://www.licious.in/img/rebranding/rewards/rewards_icon.svg">
+            </div>
+            <div class="content">
+                <div class="top-content">
+                    <div class="title">My reward</div>
+                    <div class="view-btn">
+                        <span class="text"> CLICK TO VIEW</span>
+                        <img src="https://www.licious.in/img/rebranding/arrow.png" class="arrow">
+                    </div>
+                </div>
+                <div class="animation-container">
+                    <div class="middle-content">
+                        <span class="desc">Place an order and win your next reward</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="explore">Explore by category</h2>
+    <div id="exp-category"></div>
+    <h2 id="bseller">Breakefast&Snacking Specials</h2>
+    <div id="bms"></div>
+    <div id="blogtext">
+        <h2>Check out our blog</h2>
+        <p>see all</p>
+    </div>
+    <div id="blog"></div>
+    <div id="adv">
+        <img src="https://d2407na1z3fc0t.cloudfront.net/homepageStaticBanner/homepageStaticBanner_62a34b8cba7db">
+    </div>
+    <div id="newshead">
+        <h3>In the news</h3>
+    </div>
+    <div id="news">
+    </div>
+
+
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="footerheader">
+                <img src="https://www.licious.in/img/rebranding/licious-logo.svg">
+            </div>
+            <div id="usefull-links">
+                <div id="links">
+                    <ul style="width:40%">
+                        <li class="head">USEFUL LINKS</li>
+                        <li>Why Licious?</li>
+                        <li>Refer&Earn</li>
+                        <li>Licious cash&Cash+</li>
+                        <li>Careers</li>
+                        <li>Blog</li>
+                        <li>Campaign</li>
+                        <li>Bug Bounty Guidlines</li>
+                        <li>About us</li>
+                        <li>FSSC 22000 Certification</li>
+                        <li>FSSAI licenses</li>
+                        <li>Sitemap</li>
+                    </ul>
+                    <ul style="width:50%">
+                        <li class="head">EXPERIENCE LICIOUS APP ON MOBILE</li>
+                        <li class="download">
+                            <img src="https://www.licious.in/img/rebranding/app-store-new.svg">
+                            <img src="https://www.licious.in/img/rebranding/play-store-new.png">
+                        </li>
+                    </ul>
+                    <div class="keep-in-touch">
+                        <span class="keep-text">KEEP IN TOUCH</span>
+                        <img src="https://www.licious.in/img/rebranding/insta_color.png">
+                        <img src="https://www.licious.in/img/rebranding/fb_color.png">
+                        <img src="https://www.licious.in/img/rebranding/twitter_color.png">
+                    </div>
+                </div>
+                <div class="links-contact">
+                    <ul class="contact-list">
+                    <li class="head">Contact US</li>
+                    <li>Call: 1800-4190-786</li>
+                    <li>talktous@licious.com</li>
+                    <li class="addr">Regesitered Office Address:</li>
+                    <li>House of Licious,Zed Pearl,No12,Domlur layout</li>
+                    <li>Bangalore,Karnataka-560071</li>
+                     </ul>
+                     <ul class="essential-list">
+                    <li>T&C</li>
+                    <li>FAQ</li>
+                    <li>Privacy Policy</li>
+                    <li class="addr">HAVE SECURITY CONCERN?</li>
+                    <LI>Mail to us: security@licious.com</LI>
+                    </ul>
+                <ul class="verified-pay">
+                    <li class="veri">
+                        <img src="https://www.licious.in/img/rebranding/3-dsecure.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+            <div class="cities-serving">
+                <div class="city-heading-container">
+                    <span class="city-header">CITES WE SERVE</span>
+                </div>
+                <div class="city-list-container">
+                    <p class="city_name">Bengaluru</p>
+                    <p class="city_name">NCR</p>
+                    <p class="city_name">Hyderabad</p>
+                    <p class="city_name">Chandigarh</p>
+                    <p class="city_name">Panchkula</p>
+                    <p class="city_name">Mohali</p>
+                    <p class="city_name">Mumbai</p>
+                    <p class="city_name">Pune</p>
+                    <p class="city_name">Chennai</p>
+                    <p class="city_name">Coimbatore</p>
+                    <p class="city_name">Jaipur</p>
+                    <p class="city_name">Cochin</p>
+                    <p class="city_name">Vijayavada</p>
+                    <p class="city_name">Vishakapatnam</p>
+                    <p class="city_name">Pondichery</p>
+                    <p class="city_name">Kolkata</p>
+                    <p class="city_name">Treachy</p>
+                    <p class="city_name">Lucknow</p>
+                    <p class="city_name">Kanpur</p>
+                    <p class="city_name">Agra</p>
+                    <p class="city_name">Thrissur</p>
+                    <p class="city_name">Nagpur</p>
+                    <p class="city_name">Bhillai</p>
+                    <p class="city_name">Nashik</p>
+                    <p class="city_name">Palakkad</p>
+                </div>
+            </div>
+        </div>
+        <div class="faq">
+            <h4>We will sell only the meat that we would eat ourselves.</h4>
+            <p>At Licious, we're big meat-lovers. And by big, we mean huge. So when it comes to the meat we put on your plate, we're extremely picky. Every single product is handpicked by a team with years of experience.</p>
+            <h4>If it's not fresh, we won't sell it</h4>
+            <p>For meat to stay fresh and retain its natural juices, it needs to be stored at a temperature between 0° and 5°C. We maintain this temperature from the time we procure the product to cleaning, cutting and storing it, until it leaves for delivery. And even when it's out for delivery, we keep it chilled right up to your doorstep.Did we mention that we're obsessed?</p>
+            <h4>We will charge only for what you buy</h4>
+            <p>Doesn't everyone do this? Not really. Most other places first weigh the meat, then cut up the pieces, and throw out the parts which aren't fit to eat, such as offal, gizzard, wingtips, etc. But you still pay based on the original weight even though what you finally get is 10% to 30% less</p>
+        </div>
+        <div class="disclaimer">
+        <h5><img src="https://www.licious.in/img/rebranding/copyright2.png">
+            <span>2022</span>
+            Delightful Gaurmet Pvt Ltd. All Rights Reserved
+        </h5>
+        <p class="plast">Licious is your one-stop fresh meat delivery shop. In here, you get nothing but the freshest meat & seafood, delivered straight to your doorstep. Now you can buy meat online anytime at your convenience. Indulge in our diverse selection: Chicken, Mutton, Seafood (Fish, Prawns, Crabs), Marinades & Cold Cuts. All our products are completely natural and healthy. Once you've experienced Licious, you'll never go back to the old way of buying meat and seafood.</p>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function rewardfunction()
+    {
+        console.log("clicked");
+       window.location.href="rewardnfaq.html";
+    }
+   
+ let categoryarr=[
+    {logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/539819fa-f8f5-6148-d407-95522fa17a28/original/Todays-deal21.png",
+    veriety:"Today's Deal",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/479a9750-d9a2-33ff-0693-3044a9dcae91/original/Chicken.png",
+        veriety:"Chicken"
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/46494180-ff34-2236-4240-da12222c4d23/original/Fish___Seafood.png",
+        veriety:"Fish&SeaFood",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/952cc910-319c-0b5d-fa34-373f05f0917a/original/Mutton.png",
+        veriety:"Mutton",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/0a8c4f08-15e7-12e5-a696-286cddadf373/original/RTC_(2).png",
+        veriety:"Ready to Cook",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/b528b5d9-aae1-8814-99d5-8642e2ee3676/original/Prawns.png",
+        veriety:"Prawns",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/d08157a7-8828-4978-eb3f-3408cfe7d1f9/original/Venus_(1).png",
+        veriety:"Cold Cuts",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/066b2145-5678-c1c6-5a05-5e5e53840101/original/Continental-egg-spread.png",
+        veriety:"Spreads",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/54771c04-5aae-094d-8739-b22d09ab284e/original/Eggs.png",
+        veriety:"Eggs",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/8f6c3a69-7867-05d5-9367-ed091bdf3c61/original/hyd-chicken.png",
+        veriety:"Biryani&Kebab",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/b8169e6d-59ae-ba6f-f839-ec0883a9742e/original/Combo2.png",
+        veriety:"Combos",
+    },
+    {
+        logo:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/804e2c47-aa87-e548-8d19-789b1fccb8bb/original/GFD.png",
+        veriety:"Featured Collection"
+    }
+ ];
+ for(let i=0;i<categoryarr.length;i++)
+ {
+    let div=document.createElement("div");
+    let image=document.createElement("img");
+    let ver=document.createElement("h2");
+    if(i==0)
+    {
+        div.setAttribute("id","firstdiv");
+    }
+    image.setAttribute("class","imghover");
+    ver.innerText=categoryarr[i].veriety;
+    image.setAttribute("src",categoryarr[i].logo);
+    div.append(image,ver);
+    document.querySelector("#categorydiv").append(div);
+ };
+ document.querySelector("#firstdiv").addEventListener("click",today)
+ function today()
+ {
+    window.location.href="todaysdeal.html";
+ };
+let bestseller=[
+    {
+        imag:"https://dao54xqhg9jfa.cloudfront.net/ProductMerchantdising/4f2023a6-ec0e-84c7-ae4e-1090534a2210/original/1584770367.3699--2020-03-2111_29_27--738.jpeg?format=webp",
+        product:"Chicken curry cut-Small pieces",
+        details:"Small piece of bone-in& boneless chicken for curries",
+        weight:"Net wt:500gms",
+        gross:"Gross:526gms",
+        mrp:"MRP:159",
+    },
+    {
+        imag:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_av4kgtb3l1h/1/prod_display_image/1631077687.4036--2021-09-0810:38:07--1818?format=webp",
+        product:"Chicken curry cut-small pieces(Large Pack)",
+        details:"Bone in chicken pieces of skinless meat including two",
+        weight:"Net wt:1000gms",
+        gross:"Gross:1026gms",
+        mrp:"MRP:305"
+    },
+    {
+        imag:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_3nqjtznab5c/1/prod_display_image/1636908289.9261--2021-11-1422:14:49--1818?format=webp",
+        product:"Chicken breast Boneless",
+        details:"Tender,boneless fillets of chicken meat cut from the bre...",
+        weight:"Net wt:450gms",
+        gross:"Gross:600gms",
+        mrp:"MRP:239"
+    }
+];
+    for (let i=0;i<bestseller.length;i++)
+    {
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",bestseller[i].imag)
+        let pro=document.createElement("h4");
+        pro.innerText=bestseller[i].product;
+        let details=document.createElement("h4");
+        details.innerText=bestseller[i].details;
+        let divn=document.createElement("div");
+        divn.setAttribute("id","weight");
+        let ntwei=document.createElement("h3");
+        ntwei.innerText=bestseller[i].weight;
+        let gross=document.createElement("h3");
+        gross.innerText=bestseller[i].gross;
+        let divp=document.createElement("div");
+        divp.setAttribute("id","price");
+        let price=document.createElement("h2");
+        price.innerText=bestseller[i].mrp;
+        let button=document.createElement("button");
+        button.innerText="ADD TO CART";
+        // button.addEventListener("click",addtocartarray)
+        let br=document.createElement("br");
+        let delivery=document.createElement("h2");
+        delivery.innerText="Delivered by:-Tomorrow 6AM-9PM";
+        delivery.style.color="grey";
+        divn.append(ntwei,gross);
+        divp.append(price,button);
+        div.append(image,pro,details,divn,divp,br,delivery);
+        
+        document.querySelector("#bestseller").append(div);
+    };
+let bonelesscuts=[
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/9e8eaa76-7195-009a-7094-05b50bf1d41e/original/Goat-Boneless-Hero-Shot.jpg?format=webp",
+        product:"Goat boneless",
+        lebel:"Chunky,even piece of fat trimmed,boneless goat meat",
+        weight:"Net wt:500gms",
+        gross:"Gross:758gms",
+        price:"MRP:659",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/prodDev/pr_3rkjm1v51mm/1/prod_display_image/1636890938.9032--2021-11-1417:25:38--905?format=webp",
+        product:"Basa(Pangas)-Boneless cubes",
+        lebel:"Relish the smooth,soft texture of Indian Basa cube in e....",
+        weight:"Net wt:400gms",
+        gross:"Gross:1600gms",
+        price:"MRP:359",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/be46f1fa-1aa8-81ea-7a47-11260815a274/original/Chicken_MiniBites_Boneless_Hero_Shot.jpg?format=webp",
+        product:"Chicken boneless-mini bites",
+        lebel:"Boneless chicken breast cut into bite size pieces that k...",
+        weight:"Net wt:250gms",
+        gross:"Gross:350gms",
+        price:"MRP:159",
+    },
+]
+for (let i=0;i<bonelesscuts.length;i++)
+    {
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",bonelesscuts[i].image)
+        let pro=document.createElement("h3");
+        pro.innerText=bonelesscuts[i].product;
+        let details=document.createElement("h4");
+        details.innerText=bonelesscuts[i].lebel;
+        let divn=document.createElement("div");
+        divn.setAttribute("id","weight");
+        let ntwei=document.createElement("h3");
+        ntwei.innerText=bonelesscuts[i].weight;
+        let gross=document.createElement("h3");
+        gross.innerText=bonelesscuts[i].gross;
+        let divp=document.createElement("div");
+        divp.setAttribute("id","price");
+        let price=document.createElement("h2");
+        price.innerText=bonelesscuts[i].price;
+        let button=document.createElement("button");
+        button.innerText="ADD TO CART";
+        let br=document.createElement("br");
+        let delivery=document.createElement("h2");
+        delivery.innerText="Delivered by:-Tomorrow 6AM-9PM";
+        delivery.style.color="grey";
+        divn.append(ntwei,gross);
+        divp.append(price,button);
+        div.append(image,pro,details,divn,divp,br,delivery);
+        document.querySelector("#Boneless").append(div);
+    }
+let expcat=[
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/Category/782aa584-4978-2e46-e38a-4aff56f10800/original/1603885852.4258--2020-10-2817_20_52--738.jpeg?format=webp",
+        lebel:"Today's Deals",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/840ded78-a6e8-c768-4069-9abde900b5ea/original/Chicken_(1).png?format=webp",
+        lebel:"Chicken",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/b297aada-cd28-8357-f0e1-2ae25d3dd1ee/original/FishSeafood.png?format=webp",
+        lebel:"Fish&Seafood",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/b4b90104-3976-ee97-7cdd-812a4916c0e6/original/Mutton.jpg?format=webp",
+        lebel:"Mutton",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/1db15fd5-a5d3-b275-1579-2e3b2edc0d30/original/RTC.png?format=webp",
+        lebel:"Ready to cook",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/Category/2105beee-e9a9-3efd-4912-2b9657f32d99/original/1604284739.3526--2020-11-0208_08_59--472.jpeg?format=webp",
+        lebel:"Prawns",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/db686e9b-3609-a719-49a6-435a883a1d59/original/Cold-Cuts_(1).png?format=webp",
+        lebel:"Cold cuts",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/a73279cf-eb46-a552-c7bd-10361814ae92/original/Spread.png?format=webp",
+        lebel:"Spreads",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/Category/bdfca08e-566b-4439-0aac-9c100704cb0b/original/1603646527.5457--2020-10-2522_52_07--738.jpeg?format=webp",
+        lebel:"Eggs",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/ecf1b530-d791-c509-b17c-43ccaabf9921/original/1.jpg?format=webp",
+        lebel:"Biryani&Kebab",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/Category/8209cc57-cc85-4e5d-ac6b-4d8f2f36c1ce/original/1604645369.2866--2020-11-0612_19_29--738.jpeg?format=webp",
+        lebel:"Combos",
+    },
+    {
+        image:"https://dao54xqhg9jfa.cloudfront.net/OMS-Category/050c5580-8e16-30f3-213f-f109d86be44a/original/cat-image_(1).jpg?format=webp",
+        lebel:"Featured Collection",
+    }
+];
+for(let i=0;i<expcat.length;i++)
+ {
+    let div=document.createElement("div");
+    let image=document.createElement("img");
+    let ver=document.createElement("h3");
+    ver.innerText=expcat[i].lebel;
+    image.setAttribute("src",expcat[i].image);
+    div.append(image,ver);
+    document.querySelector("#exp-category").append(div);
+ }
+ let bmsspecial=[
+ {
+        imag:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/0d28ad62-9409-c682-3c22-8e0ebc1697d5/original/Chunky-Continental-Chicken-Spread.jpg?format=webp",
+        product:"Chunky continental Chicken Spread",
+        details:"Meat delight mix of freshly roasted chicken chunks,crushed",
+        weight:"Net wt:200gms",
+        gross:"Gross:200gms",
+        mrp:"MRP:199",
+    },
+    {
+        imag:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/5c6b23b1-9940-30e2-7c3b-fc0d7be529a1/original/cold_cut-06.jpg?format=webp",
+        product:"Pepper chicken Salami(Mini)Ready to Eat",
+        details:"8 pieces of pepper chicken Salami",
+        weight:"Net wt:128gms",
+        gross:"Pieces:8",
+        mrp:"MRP:199"
+    },
+    {
+        imag:"https://dao54xqhg9jfa.cloudfront.net/OMS-ProductMerchantdising/36c60289-829d-830f-d4c7-c62675adb323/original/Frank---Chorizo-unCooked+new.jpg?format=webp",
+        product:"Chicken Chorizo Frankfurter",
+        details:"Chicken sausage smoked with chorizo spice mix",
+        weight:"Net wt:4",
+        gross:"Pieces:4",
+        mrp:"MRP:299"
+    }
+ ]
+ for (let i=0;i<bmsspecial.length;i++)
+    {
+        let div=document.createElement("div");
+        let image=document.createElement("img");
+        image.setAttribute("src",bmsspecial[i].imag)
+        let pro=document.createElement("h3");
+        pro.innerText=bmsspecial[i].product;
+        let details=document.createElement("h4");
+        details.innerText=bmsspecial[i].details;
+        let divn=document.createElement("div");
+        divn.setAttribute("id","weight");
+        let ntwei=document.createElement("h3");
+        ntwei.innerText=bmsspecial[i].weight;
+        let gross=document.createElement("h3");
+        gross.innerText=bmsspecial[i].gross;
+        let divp=document.createElement("div");
+        divp.setAttribute("id","price");
+        let price=document.createElement("h2");
+        price.innerText=bmsspecial[i].mrp;
+        let button=document.createElement("button");
+        button.innerText="ADD TO CART";
+        let br=document.createElement("br");
+        let delivery=document.createElement("h2");
+        delivery.innerText="Delivered by:-Tomorrow 6AM-9PM";
+        delivery.style.color="grey";
+        divn.append(ntwei,gross);
+        divp.append(price,button);
+        div.append(image,pro,details,divn,divp,br,delivery);
+        
+        document.querySelector("#bms").append(div);
+    }
+let blog=[
+    {
+        image:"https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_2055615416.jpg",
+        lebel:"This Creamy Herbed Chicken Recipe is the Perfect Meal Any Day of the Week!",
+    },
+    {
+        image:"https://www.licious.in/blog/wp-content/uploads/2022/06/shutterstock_2040426830.jpg",
+        lebel:"Savour a Mouth-Watering Peprika Roast Chicken On a Lazy Weekend",
+    },
+    {
+        image:"https://www.licious.in/blog/wp-content/uploads/2022/06/teriyaki-chicken.jpg",
+        lebel:"Love Eating Teriyaki Chicken? Make it At Home with this Easy and Delicious Recipe!",
+    }
+];
+for(let i=0;i<blog.length;i++)
+{
+    let div=document.createElement("div");
+
+    let image=document.createElement("img");
+    image.setAttribute("src",blog[i].image)
+    image.setAttribute("id","blogimg")
+    let lebel=document.createElement("h3");
+    lebel.innerText=blog[i].lebel;
+
+    div.append(image,lebel)
+    document.querySelector("#blog").append((div));
+}
+let news=[
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/inTheNews/35/inthenews_62aadde78bdae",
+        lebel:"Licious is India's first Animal Protien Brand to be certified..."
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/inTheNews/35/inthenews_62aadde78bdae",
+        lebel:"licious announces continuous liquidity of ESOP's from 2022",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/inTheNews/37/inthenews_62aae0b741820",
+        lebel:"Why Licious wants to become theeverything store for meet",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/inTheNews/38/inthenews_62aae10540001",
+        lebel:"Indias licious becomes unicorn with $52 million fres...",
+    },
+    {
+        image:"https://d2407na1z3fc0t.cloudfront.net/inTheNews/39/inthenews_62aae1c5de08e",
+        lebel:"They slayed COVID,we build a unicorn:Meet"
+    }
+];
+for(let i=0;i<news.length;i++)
+{
+    let div=document.createElement("div");
+    let image=document.createElement("img");
+    image.setAttribute("src",news[i].image);
+    let lebel=document.createElement("h5");
+    lebel.innerText=news[i].lebel;
+    console.log("aksjdkjj");
+    div.append(image,lebel);
+    document.querySelector("#news").append(div);
+}
+</script>
