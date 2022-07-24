@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paymentgateway</title>
+    <style>
+        #container{
+            margin: auto;
+            width:400px;
+            height:480px;
+            margin-top: 100px;
+            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 2px 2px 0px, rgba(0, 0, 0, 0.07) 0px 4px 4px 0px, rgba(0, 0, 0, 0.07) 0px 8px 8px 0px, rgba(0, 0, 0, 0.07) 0px 16px 16px 0px;
+        }
+        h1{
+            color:green;
+            text-align: center;
+        }
+        #container>p{
+            color:dimgrey;
+            margin-left:45px;
+        }
+        #container>input{
+            padding:5px;    
+            margin-bottom:10px;
+            width:280px;
+            margin-left: 45px;
+        }
+        #container>button{
+            width:200px;
+            padding:5px;
+            margin-left: 100px;
+            background-color:rgb(192, 232, 215);
+            color:crimson;
+            border:0px;
+            border-radius: 10px;
+        }
+        body{
+            background-color: rgb(243, 245, 245);
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Payment Gateway</h1>
+        <p>Enter Card Number</p>
+        <input id="cardnum" type="number" placeholder="Enter Card Number"/>
+        <p>Enter Cvv</p>
+        <input id="cvv" type="number" placeholder="Enter cvv"/>
+        <p>Enter Exp Date</p>
+        <input id="expdate" placeholder="Enter exp date"/>
+        <p>Enter Name</p>
+        <input id="name" type="text" placeholder="Enter name on card"/>
+        <br>
+        <button>Submit</button>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector("button").addEventListener("click",payment)
+    // let details=JSON.parse(localStorage.getItem("userdetails"));
+    function payment()
+    {
+        event.preventDefault();
+        var cardnum=document.querySelector("#cardnum").value;
+        var cardcvv=document.querySelector("#cvv").value;
+        var expdate=document.querySelector("#expdate").value;
+         var name=document.querySelector("#name").innerText;
+         let flag=true;
+         if((cardnum==123456789) && (cardcvv==123)&&(expdate==2001))
+            {
+                flag=true;
+                // break;
+            }
+            else{
+                alert("enter correct details");
+                return;
+            }   
+        //  }
+         if(flag==true)
+         {
+            window.location.href="otp.html"
+         }
+         else 
+            {
+                alert("enter correct details");
+            }
+
+        }
+</script>
